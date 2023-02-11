@@ -5,6 +5,20 @@ export const menu = [
   { link: "Contacts", text: "Contacts" },
   { link: "Journal", text: "Journal" },
 ];
+export const shopCat = [
+  { link: "", text: "Category 1" },
+  { link: "", text: "Category 2" },
+  { link: "", text: "Category 3" },
+  { link: "", text: "Category 4" },
+  { link: "", text: "Category 5" },
+];
+export const help = [
+  { link: "", text: "Privacy Policy" },
+  { link: "", text: "Terms & Conditions" },
+  { link: "", text: "Special E-shop" },
+  { link: "", text: "Shipping" },
+  { link: "", text: "Secure Payments" },
+];
 
 export const cat = [
   { link: "Accesories", text: "Accesories" },

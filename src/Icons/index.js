@@ -1,10 +1,10 @@
 import { HiBars2 } from "react-icons/hi2";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BsCartFill } from "react-icons/bs";
-import { FaUserAlt } from "react-icons/fa";
+import { FaUserAlt, FaFacebookF } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { AiFillHeart } from "react-icons/ai";
-import { TfiReload } from "react-icons/tfi";
+import { AiFillHeart, AiOutlineInstagram } from "react-icons/ai";
+import { TfiReload, TfiLinkedin } from "react-icons/tfi";
 import { MdShoppingCart } from "react-icons/md";
 
 export {
@@ -16,4 +16,7 @@ export {
   AiFillHeart,
   TfiReload,
   MdShoppingCart,
+  AiOutlineInstagram,
+  FaFacebookF,
+  TfiLinkedin,
 };

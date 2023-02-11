@@ -5,7 +5,7 @@ import Image from "../Image";
 
 const Adds = () => {
   return (
-    <div className=" my-5 md:my-[140px]">
+    <div className=" my-5 md:my-10 xl:my-[140px]">
       <Container>
         <div className="grid grid-cols-2 gap-5">
           <div>

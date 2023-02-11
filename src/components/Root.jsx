@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "./Layouts/Footer";
 import Header from "./Layouts/Header";
 
 const Root = () => {
@@ -8,6 +9,7 @@ const Root = () => {
       <Header />
 
       <Outlet />
+      <Footer />
     </>
   );
 };
