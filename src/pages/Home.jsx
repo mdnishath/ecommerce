@@ -1,5 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import Adds from "../components/Layouts/Adds";
+import AditionalInfo from "../components/Layouts/AditionalInfo";
 import Banner from "../components/Layouts/Banner";
 
 const Home = () => {
@@ -9,6 +11,8 @@ const Home = () => {
   return (
     <>
       <Banner />
+      <AditionalInfo />
+      <Adds />
     </>
   );
 };
