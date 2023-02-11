@@ -7,7 +7,7 @@ import {
   FaUserAlt,
   IoMdArrowDropdown,
 } from "../../../Icons";
-import Dropdown from "../../Dropdown";
+import Dropdown from "../Dropdown";
 import { NavLink } from "react-router-dom";
 import { cat } from "../../../Data";
 
@@ -45,7 +45,7 @@ const Mainbar = () => {
   return (
     <div className="bg-third py-6">
       <Container>
-        <div className="grid grid-cols-3 items-center">
+        <div className="grid grid-cols-2 items-center gap-3 md:grid-cols-3 md:gap-0">
           <div className="inline-flex">
             <Dropdown dropref={categoryRef} className={"relative"}>
               <div className="flex cursor-pointer items-center gap-3">
@@ -53,7 +53,7 @@ const Mainbar = () => {
                 <p className=" text-sm font-semibold">Shop by Category</p>
               </div>
               {categoryshow && (
-                <ul className="absolute top-6 w-[263px] divide-y divide-divid bg-primary">
+                <ul className="absolute top-6 z-50 order-1 w-[263px] divide-y divide-divid bg-primary">
                   {cat.map((item, index) => (
                     <li key={index} className="px-6 py-4">
                       <NavLink
@@ -71,7 +71,7 @@ const Mainbar = () => {
             </Dropdown>
           </div>
 
-          <div className="relative">
+          <div className="relative order-3 col-span-2 md:order-2 md:col-span-1">
             <input
               type="text"
               placeholder="Search Products"
@@ -79,7 +79,7 @@ const Mainbar = () => {
             />
             <BiSearchAlt2 className="absolute top-1/2 right-5 -translate-y-1/2 text-xl" />
           </div>
-          <div className="flex items-center justify-end gap-10">
+          <div className="order-2 flex items-center justify-end gap-10 md:order-3">
             <div className="flex items-center gap-3">
               <FaUserAlt />
               <IoMdArrowDropdown />
